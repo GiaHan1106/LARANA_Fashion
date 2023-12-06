@@ -136,6 +136,7 @@
     .s_up {
         @include posAbsolute("br", 40px, 20px);
         position: fixed;
+        cursor: pointer;
         i {
             background-color: #fff;
             border: 1px solid rgba(0, 0, 0, 0.1215686275);

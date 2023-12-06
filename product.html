@@ -19,38 +19,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <marquee class="s-textRun">Add to cart <span class="s_price">$120</span> for free shipping <span class="s_item">&&</span>FREE EXCHANGE - At all stores for 30 days</marquee>
-        <div class="container">
-            <div class="s-header">
-                <div class="s_logo">
-                    <a href=""><img src="./img/logo/logoheader.png" alt="" /></a>
-                </div>
-                <div class="s_menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutUs.html">About Us</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="s_search">
-                    <input type="text" placeholder="Search" />
-                    <i class="fa-light fa-magnifying-glass"></i>
-                </div>
-                <div class="s_icon">
-                    <a href="">
-                        <i class="fa-thin fa-user"></i>
-                        <p>User</p>
-                    </a>
-                    <a href="">
-                        <i class="fa-thin fa-cart-shopping"></i>
-                        <span>1</span>
-
-                        <p>Cart</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div id="header"></div>
         <div class="s-listPic">
             <div class="container">
                 <div class="row">
@@ -81,11 +50,11 @@
             <div class="container">
                 <h2><span class="s_home">Home</span><span class="s_angel">></span> Product</h2>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <div class="s_filterProduct">
                             <div class="s_filter">
                                 <h4>CATEGORIES</h4>
-                                <ul>
+                                <ul id="filterCate">
                                     <li>Man</li>
                                     <li>Lady</li>
                                     <li>Bag</li>
@@ -93,123 +62,35 @@
                                 </ul>
                             </div>
                             <div class="s_filter">
-                                <h4>COLORS</h4>
-                                <ul>
-                                    <li><span></span>Gray</li>
-                                    <li><span></span>Green</li>
-                                    <li><span></span>Black</li>
-                                    <li><span></span>Blue</li>
-                                    <li><span></span>Brown</li>
-                                    <li><span></span>Yellow</li>
-                                    <li><span></span>Pink</li>
-                                </ul>
-                            </div>
-                            <div class="s_filter">
-                                <h4>SIZE</h4>
-                                <ul>
-                                    <li>S</li>
-                                    <li>M</li>
-                                    <li>L</li>
-                                    <li>XL</li>
-                                    <li>XXL</li>
-                                    <li>XXXL</li>
-                                    <li>XXXL</li>
-                                </ul>
-                            </div>
-                            <div class="s_filter">
                                 <h4>PRICES</h4>
-                                <ul>
-                                    <li>$0 - $100</li>
-                                    <li>$100 - $300</li>
-                                    <li>$300 - $500</li>
-                                    <li>$500 - $800</li>
-                                    <li>$800 - $1000</li>
-                                    <li>Over $1000</li>
+                                <ul id="filterPrice">
+                                    <li data-min="0" data-max="100">$0 - $100</li>
+                                    <li data-min="100" data-max="300">$100 - $300</li>
+                                    <li data-min="300" data-max="500">$300 - $500</li>
+                                    <li data-min="500" data-max="800">$500 - $800</li>
+                                    <li data-min="800" data-max="1000">$800 - $1000</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-10">
                         <div class="s_showPro">
-                            <div class="s_text">
-                                <h4>FILTER <i class="fa-thin fa-clock"></i></h4>
-                                <h5>Total<span>32</span>product</h5>
-                            </div>
                             <div class="s_product">
                                 <div class="row"></div>
                             </div>
                         </div>
-                        <div class="text-center mb-5">
+                        <!-- <div class="text-center mb-5">
                             <button class="c-button-4">LOAD MORE</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="s-footer">
-            <div class="s_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="s_childFooter">
-                                <img src="./img/logo/logoheader.png" alt="" />
-                                <div class="s_address">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <p class="s_footerText">UIT School</p>
-                                </div>
-                                <div class="s_address">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <p class="s_footerText">19521468@gm.uit.edu.vn</p>
-                                </div>
-                                <div class="s_address">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <p class="s_footerText">1900-1565</p>
-                                </div>
-                                <div class="s_icon">
-                                    <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="s_childFooter">
-                                <ul>
-                                    <li>About Us</li>
-                                    <li>Delivery Info</li>
-                                    <li>Order Tracking</li>
-                                    <li>My Account</li>
-                                    <li>Help</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="s_childFooter">
-                                <h2>NEWSLETTER</h2>
-                                <h5>Enjoy our newsletter to stay updated with the latest news and special sales.</h5>
-                                <form>
-                                    <input required type="text" placeholder="Enter your email address" />
-                                    <button type="submit" class="s_letterPaper">
-                                        <i class="fa-regular fa-paper-plane"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="s_bot">
-                <h3>© LARANA Fashion. All Rights Reserved.</h3>
-                <img src="./img/logo/visa.png" alt="" />
-            </div>
-            <div class="s_up">
-                <i class="fa-sharp fa-solid fa-up-long"></i>
-            </div>
-        </div>
+        <div id="footer"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/base.js"></script>
-        <script src="js/index.js"></script>
         <script src="js/product.js"></script>
     </body>
 </html>

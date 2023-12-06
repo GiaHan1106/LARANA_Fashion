@@ -37,10 +37,13 @@
         margin-left: auto;
         input {
             border: none;
+            width: 100%;
             background-color: transparent;
+            outline: none;
         }
         i {
             @include posAbsolute("tr", 0.4rem, 0.7rem);
+            cursor: pointer;
         }
     }
     .s_icon {

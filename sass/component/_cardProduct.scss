@@ -10,6 +10,7 @@
     }
     .s_img {
         overflow: hidden;
+        position: relative;
         img {
             height: 400px;
             object-fit: cover;
@@ -18,8 +19,10 @@
         &::before {
             background-color: #0000003c;
             @include posAbsolute("tr", 0, 0);
-            @include afterAndBefore();
-            height: 83%;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
             z-index: 999999;
             opacity: 0;
             transition: 0.7s;

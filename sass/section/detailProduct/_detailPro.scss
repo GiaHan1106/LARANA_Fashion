@@ -1,5 +1,6 @@
 .s-detailPro {
     margin: 3.5rem 0;
+    position: relative;
     .s_img {
         position: relative;
         img {
@@ -52,7 +53,7 @@
                 font-size: $fs-16;
             }
         }
-        .s_chooseColor {
+        .s_chooseSize {
             display: flex;
             gap: 1rem;
             margin-top: 1rem;
@@ -113,6 +114,59 @@
             }
             th {
                 background-color: $gray-color-4;
+            }
+        }
+    }
+    .s_cart {
+        width: 25%;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 1rem;
+        @include posAbsolute("tr", 10px, -10px);
+        background-color: $white-color;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            right: 20px;
+        }
+        i {
+            text-align: right;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+        }
+        .s_left {
+            img {
+                width: 100%;
+            }
+        }
+        .s_right {
+            h2 {
+                font-size: $fs-14;
+                font-weight: $fw-600;
+            }
+            h3 {
+                font-weight: $fw-600;
+                margin: 0.5rem 0;
+                font-size: $fs-15;
+                font-weight: $fw-600;
+                color: $red-color;
+            }
+            h5 {
+                font-size: $fs-15;
+                font-weight: $fw-400;
+                color: $gray-color;
+
+                span {
+                    color: $black-color;
+                    font-weight: $fw-600;
+                    font-size: $fs-16;
+                }
+            }
+            .s_addCart {
+                margin-top: 1rem;
             }
         }
     }

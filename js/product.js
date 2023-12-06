@@ -1,21 +1,47 @@
+let url = new URL(window.location.href);
+let idcate = url.searchParams.get("idCate");
+let searchKey = url.searchParams.get("keySearch");
+
 let showProduct = document.querySelector(".s-productPage .s_showPro .s_product .row");
-async function renderProduct(tabText) {
-    const API_PRODUCT = `${URL_API}/product?cate=${tabText}`;
-    const dataProduct = await getData(API_PRODUCT);
-    showProduct.innerHTML = "";
-    dataProduct.forEach((pro) => {
-        showProduct.innerHTML += `<div class="col-lg-3">
-                <div class="s_cardProduct">
-                    <div class="s_img">
-                        <img src="${pro.img}" alt="" />
-                    </div>
-                    <div class="s_inforProduct">
-                        <h2>${pro.name}</h2>
-                        <h3>$ ${pro.priceSale} <span>$ ${pro.price}</span></h3>
-                    </div>
-                    </div>
-            
-            </div>`;
-    });
+
+async function renderListProduct() {
+    if (searchKey) {
+        const API_PRODUCT = `${URL_API}/product?name_like=${searchKey}`;
+        const dataSearchProduct = await getData(API_PRODUCT);
+        renderHTMLProduct(showProduct, dataSearchProduct);
+    } else if (idcate) {
+        const API_PRODUCT = `${URL_API}/product?cate=${idcate}`;
+        const dataSearchProduct = await getData(API_PRODUCT);
+        renderHTMLProduct(showProduct, dataSearchProduct);
+    } else {
+        renderProduct("all", showProduct);
+    }
 }
-renderProduct("lady");
+renderListProduct();
+//filter product
+let filterCate = document.querySelectorAll("#filterCate li");
+filterCate.forEach((li) => {
+    li.addEventListener("click", function () {
+        renderProduct(li.textContent.toLowerCase(), showProduct);
+        filterCate.forEach((li2) => {
+            li2.classList.remove("active");
+        });
+        li.classList.add("active");
+    });
+});
+
+let filterPrice = document.querySelectorAll("#filterPrice li");
+filterPrice.forEach((li) => {
+    li.addEventListener("click", async function () {
+        let min = li.getAttribute("data-min");
+        let max = li.getAttribute("data-max");
+        const API_PRODUCT = `${URL_API}/product`;
+        const dataProduct = await getData(API_PRODUCT);
+        let dataResult = dataProduct.filter((item) => item.priceSale > min && item.priceSale < max);
+        renderHTMLProduct(showProduct, dataResult);
+        filterPrice.forEach((li2) => {
+            li2.classList.remove("active");
+        });
+        li.classList.add("active");
+    });
+});

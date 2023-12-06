@@ -4,7 +4,24 @@ $(function () {
         autoplay: true,
     });
 });
-
+//filter categories
+let filterCate = document.querySelector(".s-categories .row");
+async function renderCate() {
+    const API_PRODUCT = `${URL_API}/cate`;
+    const dataProduct = await getData(API_PRODUCT);
+    dataProduct.forEach((element) => {
+        filterCate.innerHTML += `<div class="col-lg-3">
+        <a href="product.html?idCate=${element.name}" class="s_kindProduct">
+            <div class="s_img">
+                <img src="${element.img}" alt="" />
+            </div>
+            <h3>${element.name}</h3>
+        </a>
+    </div>`;
+    });
+    console.log(dataProduct);
+}
+renderCate();
 //ourProduct
 let listTab = document.querySelectorAll(".s-ourProduct .s_bot .s_tab ul li");
 let changeTab = document.querySelector(".s-ourProduct .s_bot .s_tab ul li");
@@ -17,33 +34,12 @@ listTab.forEach((tab) => {
         });
         tab.classList.add("active");
         const tabText = tab.textContent.toLowerCase();
-        renderProduct(tabText);
+        renderProduct(tabText, showCartProduct);
     });
 });
 
 //XU LY API
-
-async function renderProduct(tabText) {
-    const API_PRODUCT = `${URL_API}/product?cate=${tabText}`;
-    const dataProduct = await getData(API_PRODUCT);
-    console.log(dataProduct);
-    showCartProduct.innerHTML = "";
-    dataProduct.forEach((pro) => {
-        showCartProduct.innerHTML += `<div class="col-lg-3">
-                <div class="s_cardProduct">
-                    <div class="s_img">
-                        <img src="${pro.img}" alt="" />
-                    </div>
-                    <div class="s_inforProduct">
-                        <h2>${pro.name}</h2>
-                        <h3>$ ${pro.priceSale} <span>$ ${pro.price}</span></h3>
-                    </div>
-                    </div>
-            
-            </div>`;
-    });
-}
-renderProduct("man");
+renderProduct("man", showCartProduct);
 //showProduct
 let listDotProduct = document.querySelectorAll(".s-showProduct .s_dot");
 listDotProduct.forEach((dot) => {

@@ -2,53 +2,369 @@
     "cate": [
         {
             "name": "man",
-            "id": 1
+            "id": 1,
+            "img": "img/HomePage/cate/man.webp"
         },
         {
             "name": "lady",
-            "id": 2
+            "id": 2,
+            "img": "img/HomePage/cate/lady.webp"
         },
         {
             "name": "bag",
-            "id": 3
+            "id": 3,
+            "img": "img/HomePage/cate/bag.jpeg"
         },
         {
             "name": "watches",
-            "id": 4
+            "id": 4,
+            "img": "img/HomePage/cate/watch.webp"
         }
     ],
     "product": [
-        { "id": 1, "cate": "man", "name": "Faded Short Sleeves T-shirt", "img": "img/HomePage/ourProduct/man/man1.jpeg", "price": 130.99, "priceSale": 120.0 },
-        { "id": 2, "cate": "man", "name": "Blouse", "img": "img/HomePage/ourProduct/man/man2.jpeg", "price": 140.99, "priceSale": 130.0 },
-        { "id": 3, "cate": "man", "name": " Chiffon T-shirt", "img": "img/HomePage/ourProduct/man/man3.jpeg", "price": 130.99, "priceSale": 110.0 },
-        { "id": 4, "cate": "man", "name": "Printed  Vest", "img": "img/HomePage/ourProduct/man/man4.jpeg", "price": 120.99, "priceSale": 112.0 },
-        { "id": 5, "cate": "man", "name": "Chiffon Sleeves", "img": "img/HomePage/ourProduct/man/man5.jpeg", "price": 140.99, "priceSale": 120.0 },
-        { "id": 6, "cate": "man", "name": "Short Chiffon", "img": "img/HomePage/ourProduct/man/man6.jpeg", "price": 165.99, "priceSale": 110.0 },
-        { "id": 7, "cate": "man", "name": "T-shirt Chiffon ", "img": "img/HomePage/ourProduct/man/man7.jpeg", "price": 134.99, "priceSale": 120.0 },
-        { "id": 8, "cate": "man", "name": "Printed Chiffon ", "img": "img/HomePage/ourProduct/man/man8.jpeg", "price": 120.99, "priceSale": 90.0 },
-        { "id": 9, "cate": "lady", "name": "Faded Short Sleeves T-shirt", "img": "img/HomePage/ourProduct/lady/woman1.jpeg", "price": 1130.99, "priceSale": 120.0 },
-        { "id": 10, "cate": "lady", "name": "Blouse", "img": "img/HomePage/ourProduct/lady/woman2.jpeg", "price": 140.99, "priceSale": 130.0 },
-        { "id": 11, "cate": "lady", "name": "Printed Chiffon Dress", "img": "img/HomePage/ourProduct/lady/woman3.jpeg", "price": 120.99, "priceSale": 90.0 },
-        { "id": 12, "cate": "lady", "name": "Printed Short", "img": "img/HomePage/ourProduct/lady/woman4.jpeg", "price": 150.0, "priceSale": 120.0 },
-        { "id": 13, "cate": "lady", "name": "Blouse Dress", "img": "img/HomePage/ourProduct/lady/woman5.jpeg", "price": 179.0, "priceSale": 150.0 },
-        { "id": 14, "cate": "lady", "name": "Printed Chiffon", "img": "img/HomePage/ourProduct/lady/woman6.jpeg", "price": 136.0, "priceSale": 100.0 },
-        { "id": 15, "cate": "lady", "name": "Blouse Sleeves", "img": "img/HomePage/ourProduct/lady/woman7.jpeg", "price": 169.0, "priceSale": 135.0 },
-        { "id": 16, "cate": "lady", "name": "Sleeves", "img": "img/HomePage/ourProduct/lady/woman8.jpeg", "price": 159.0, "priceSale": 125.0 },
-        { "id": 17, "cate": "bag", "name": "Lua Rhinestone Mesh Mini Pouch Bag", "img": "img/HomePage/ourProduct/bag/bag1.jpeg", "price": 130.99, "priceSale": 120.0 },
-        { "id": 18, "cate": "bag", "name": "Jania Quilted Camera Crossbody", "img": "img/HomePage/ourProduct/bag/bag2.jpeg", "price": 140.99, "priceSale": 130.0 },
-        { "id": 19, "cate": "bag", "name": "Lua Rhinestone Mini Crossbody", "img": "img/HomePage/ourProduct/bag/bag3.jpeg", "price": 160.99, "priceSale": 140.0 },
-        { "id": 20, "cate": "bag", "name": "Tori Satin Shoulder Bag", "img": "img/HomePage/ourProduct/bag/bag4.jpeg", "price": 150.0, "priceSale": 140.0 },
-        { "id": 21, "cate": "bag", "name": "Lua Rhinestone Shoulder Bag", "img": "img/HomePage/ourProduct/bag/bag5.jpeg", "price": 179.0, "priceSale": 150.0 },
-        { "id": 22, "cate": "bag", "name": "Katine Faux-Fur Convertible Crossbody", "img": "img/HomePage/ourProduct/bag/bag6.jpeg", "price": 126.0, "priceSale": 110.0 },
-        { "id": 23, "cate": "bag", "name": "Lua Rhinestone Shoulder Bag", "img": "img/HomePage/ourProduct/bag/bag7.jpeg", "price": 169.0, "priceSale": 135.0 },
-        { "id": 24, "cate": "bag", "name": "Tori Satin Mini Frame Satchel", "img": "img/HomePage/ourProduct/bag/bag8.jpeg", "price": 159.0, "priceSale": 125.0 },
-        { "id": 25, "cate": "watches", "name": "Olym Pianus 42mm Lady OP990-45ADGS-GL-X", "img": "img/HomePage/ourProduct/watch/watch5.jpeg", "price": 130.99, "priceSale": 120.0 },
-        { "id": 26, "cate": "watches", "name": "Carnival 40mm Man 8113G-VH-DD-T", "img": "img/HomePage/ourProduct/watch/watch2.jpeg", "price": 140.99, "priceSale": 130.0 },
-        { "id": 27, "cate": "watches", "name": "Orient 41mm Lady FAG02003W0", "img": "img/HomePage/ourProduct/watch/watch7.jpeg", "price": 160.99, "priceSale": 140.0 },
-        { "id": 28, "cate": "watches", "name": "Orient 40.5mm Lady RA-AG0003S10B", "img": "img/HomePage/ourProduct/watch/watch4.jpeg", "price": 150.0, "priceSale": 120.0 },
-        { "id": 29, "cate": "watches", "name": "Casio 35mm Lady LW-204-4ADF", "img": "img/HomePage/ourProduct/watch/watch1.jpeg", "price": 129.0, "priceSale": 110.0 },
-        { "id": 30, "cate": "watches", "name": "Omega 35mm Man T050.207.37.017.05", "img": "img/HomePage/ourProduct/watch/watch6.jpeg", "price": 136.0, "priceSale": 120.0 },
-        { "id": 31, "cate": "watches", "name": "Tissot 30mm Lady SL1605.1102TE", "img": "img/HomePage/ourProduct/watch/watch3.jpeg", "price": 169.0, "priceSale": 155.0 },
-        { "id": 32, "cate": "watches", "name": "Orient 31mm Man FNR1Q001W0", "img": "img/HomePage/ourProduct/watch/watch8.jpeg", "price": 159.0, "priceSale": 145.0 }
+        {
+            "id": 1,
+            "cate": "man",
+            "name": "Faded Short Sleeves T-shirt",
+            "img": "img/HomePage/ourProduct/man/man1.jpeg",
+            "price": 130.99,
+            "priceSale": 120
+        },
+        {
+            "id": 2,
+            "cate": "man",
+            "name": "Blouse",
+            "img": "img/HomePage/ourProduct/man/man2.jpeg",
+            "price": 140.99,
+            "priceSale": 130
+        },
+        {
+            "id": 3,
+            "cate": "man",
+            "name": " Chiffon T-shirt",
+            "img": "img/HomePage/ourProduct/man/man3.jpeg",
+            "price": 130.99,
+            "priceSale": 110
+        },
+        {
+            "id": 4,
+            "cate": "man",
+            "name": "Printed  Vest",
+            "img": "img/HomePage/ourProduct/man/man4.jpeg",
+            "price": 120.99,
+            "priceSale": 112
+        },
+        {
+            "id": 5,
+            "cate": "man",
+            "name": "Chiffon Sleeves",
+            "img": "img/HomePage/ourProduct/man/man5.jpeg",
+            "price": 140.99,
+            "priceSale": 120
+        },
+        {
+            "id": 6,
+            "cate": "man",
+            "name": "Short Chiffon",
+            "img": "img/HomePage/ourProduct/man/man6.jpeg",
+            "price": 165.99,
+            "priceSale": 110
+        },
+        {
+            "id": 7,
+            "cate": "man",
+            "name": "T-shirt Chiffon ",
+            "img": "img/HomePage/ourProduct/man/man7.jpeg",
+            "price": 134.99,
+            "priceSale": 120
+        },
+        {
+            "id": 8,
+            "cate": "man",
+            "name": "Printed Chiffon ",
+            "img": "img/HomePage/ourProduct/man/man8.jpeg",
+            "price": 120.99,
+            "priceSale": 90
+        },
+        {
+            "id": 9,
+            "cate": "lady",
+            "name": "Faded Short Sleeves T-shirt",
+            "img": "img/HomePage/ourProduct/lady/woman1.jpeg",
+            "price": 1130.99,
+            "priceSale": 120
+        },
+        {
+            "id": 10,
+            "cate": "lady",
+            "name": "Blouse",
+            "img": "img/HomePage/ourProduct/lady/woman2.jpeg",
+            "price": 140.99,
+            "priceSale": 130
+        },
+        {
+            "id": 11,
+            "cate": "lady",
+            "name": "Printed Chiffon Dress",
+            "img": "img/HomePage/ourProduct/lady/woman3.jpeg",
+            "price": 120.99,
+            "priceSale": 90
+        },
+        {
+            "id": 12,
+            "cate": "lady",
+            "name": "Printed Short",
+            "img": "img/HomePage/ourProduct/lady/woman4.jpeg",
+            "price": 150,
+            "priceSale": 120
+        },
+        {
+            "id": 13,
+            "cate": "lady",
+            "name": "Blouse Dress",
+            "img": "img/HomePage/ourProduct/lady/woman5.jpeg",
+            "price": 179,
+            "priceSale": 150
+        },
+        {
+            "id": 14,
+            "cate": "lady",
+            "name": "Printed Chiffon",
+            "img": "img/HomePage/ourProduct/lady/woman6.jpeg",
+            "price": 136,
+            "priceSale": 100
+        },
+        {
+            "id": 15,
+            "cate": "lady",
+            "name": "Blouse Sleeves",
+            "img": "img/HomePage/ourProduct/lady/woman7.jpeg",
+            "price": 169,
+            "priceSale": 135
+        },
+        {
+            "id": 16,
+            "cate": "lady",
+            "name": "Sleeves",
+            "img": "img/HomePage/ourProduct/lady/woman8.jpeg",
+            "price": 159,
+            "priceSale": 125
+        },
+        {
+            "id": 17,
+            "cate": "bag",
+            "name": "Lua Rhinestone Mesh Mini Pouch Bag",
+            "img": "img/HomePage/ourProduct/bag/bag1.jpeg",
+            "price": 130.99,
+            "priceSale": 120
+        },
+        {
+            "id": 18,
+            "cate": "bag",
+            "name": "Jania Quilted Camera Crossbody",
+            "img": "img/HomePage/ourProduct/bag/bag2.jpeg",
+            "price": 140.99,
+            "priceSale": 130
+        },
+        {
+            "id": 19,
+            "cate": "bag",
+            "name": "Lua Rhinestone Mini Crossbody",
+            "img": "img/HomePage/ourProduct/bag/bag3.jpeg",
+            "price": 160.99,
+            "priceSale": 140
+        },
+        {
+            "id": 20,
+            "cate": "bag",
+            "name": "Tori Satin Shoulder Bag",
+            "img": "img/HomePage/ourProduct/bag/bag4.jpeg",
+            "price": 150,
+            "priceSale": 140
+        },
+        {
+            "id": 21,
+            "cate": "bag",
+            "name": "Lua Rhinestone Shoulder Bag",
+            "img": "img/HomePage/ourProduct/bag/bag5.jpeg",
+            "price": 179,
+            "priceSale": 150
+        },
+        {
+            "id": 22,
+            "cate": "bag",
+            "name": "Katine Faux-Fur Convertible Crossbody",
+            "img": "img/HomePage/ourProduct/bag/bag6.jpeg",
+            "price": 126,
+            "priceSale": 110
+        },
+        {
+            "id": 23,
+            "cate": "bag",
+            "name": "Lua Rhinestone Shoulder Bag",
+            "img": "img/HomePage/ourProduct/bag/bag7.jpeg",
+            "price": 169,
+            "priceSale": 135
+        },
+        {
+            "id": 24,
+            "cate": "bag",
+            "name": "Tori Satin Mini Frame Satchel",
+            "img": "img/HomePage/ourProduct/bag/bag8.jpeg",
+            "price": 159,
+            "priceSale": 125
+        },
+        {
+            "id": 25,
+            "cate": "watches",
+            "name": "Olym Pianus 42mm Lady OP990-45ADGS-GL-X",
+            "img": "img/HomePage/ourProduct/watch/watch5.jpeg",
+            "price": 130.99,
+            "priceSale": 120
+        },
+        {
+            "id": 26,
+            "cate": "watches",
+            "name": "Carnival 40mm Man 8113G-VH-DD-T",
+            "img": "img/HomePage/ourProduct/watch/watch2.jpeg",
+            "price": 140.99,
+            "priceSale": 130
+        },
+        {
+            "id": 27,
+            "cate": "watches",
+            "name": "Orient 41mm Lady FAG02003W0",
+            "img": "img/HomePage/ourProduct/watch/watch7.jpeg",
+            "price": 160.99,
+            "priceSale": 140
+        },
+        {
+            "id": 28,
+            "cate": "watches",
+            "name": "Orient 40.5mm Lady RA-AG0003S10B",
+            "img": "img/HomePage/ourProduct/watch/watch4.jpeg",
+            "price": 150,
+            "priceSale": 120
+        },
+        {
+            "id": 29,
+            "cate": "watches",
+            "name": "Casio 35mm Lady LW-204-4ADF",
+            "img": "img/HomePage/ourProduct/watch/watch1.jpeg",
+            "price": 129,
+            "priceSale": 110
+        },
+        {
+            "id": 30,
+            "cate": "watches",
+            "name": "Omega 35mm Man T050.207.37.017.05",
+            "img": "img/HomePage/ourProduct/watch/watch6.jpeg",
+            "price": 136,
+            "priceSale": 120
+        },
+        {
+            "id": 31,
+            "cate": "watches",
+            "name": "Tissot 30mm Lady SL1605.1102TE",
+            "img": "img/HomePage/ourProduct/watch/watch3.jpeg",
+            "price": 169,
+            "priceSale": 155
+        },
+        {
+            "id": 32,
+            "cate": "watches",
+            "name": "Orient 31mm Man FNR1Q001W0",
+            "img": "img/HomePage/ourProduct/watch/watch8.jpeg",
+            "price": 159,
+            "priceSale": 145
+        }
+    ],
+    "order": [
+        {
+            "infor": {
+                "name": "Luong Gia Han",
+                "email": "designfuzze@gmail.com",
+                "phone": "0974200611",
+                "address": "112 Truong Thi Hoa 2",
+                "note": "123123",
+                "date": "10:43 - 6/11/2023"
+            },
+            "product": [
+                {
+                    "detail": {
+                        "id": 2,
+                        "cate": "man",
+                        "name": "Blouse",
+                        "img": "img/HomePage/ourProduct/man/man2.jpeg",
+                        "price": 140.99,
+                        "priceSale": 130
+                    },
+                    "choice": {
+                        "size": "S",
+                        "quanlity": 2
+                    },
+                    "id": 4
+                },
+                {
+                    "detail": {
+                        "id": 2,
+                        "cate": "man",
+                        "name": "Blouse",
+                        "img": "img/HomePage/ourProduct/man/man2.jpeg",
+                        "price": 140.99,
+                        "priceSale": 130
+                    },
+                    "choice": {
+                        "size": "M",
+                        "quanlity": "1"
+                    },
+                    "id": 1
+                }
+            ],
+            "id": 1
+        },
+        {
+            "infor": {
+                "name": "Luong Gia Han",
+                "email": "hgia11062001@gmail.com",
+                "phone": "0974200611",
+                "address": "112 Truong Thi Hoa",
+                "note": "123123",
+                "date": "10:54 - 6/11/2023"
+            },
+            "product": [
+                {
+                    "detail": {
+                        "id": 2,
+                        "cate": "man",
+                        "name": "Blouse",
+                        "img": "img/HomePage/ourProduct/man/man2.jpeg",
+                        "price": 140.99,
+                        "priceSale": 130
+                    },
+                    "choice": {
+                        "size": "XL",
+                        "quanlity": "2"
+                    },
+                    "id": 0
+                },
+                {
+                    "detail": {
+                        "id": 2,
+                        "cate": "man",
+                        "name": "Blouse",
+                        "img": "img/HomePage/ourProduct/man/man2.jpeg",
+                        "price": 140.99,
+                        "priceSale": 130
+                    },
+                    "choice": {
+                        "size": "L",
+                        "quanlity": "2"
+                    },
+                    "id": 1
+                }
+            ],
+            "id": 2
+        }
     ]
 }
