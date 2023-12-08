@@ -79,10 +79,3 @@ $(".s-feedBack .s_listFeed ").slick({
     speed: 300,
     autoplay: true,
 });
-
-//footer
-$(function () {
-    $(".s-footer .s_up i").click(function () {
-        document.documentElement.scrollTop = 0;
-    });
-});

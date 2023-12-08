@@ -140,3 +140,9 @@ function countCart() {
     qualityCart.innerHTML = arrayCart.length;
 }
 countCart();
+//footer
+$(function () {
+    $(".s-footer .s_up i").click(function () {
+        document.documentElement.scrollTop = 0;
+    });
+});
