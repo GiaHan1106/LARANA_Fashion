@@ -1,4 +1,4 @@
-const URL_API = `http://localhost:3000`;
+const URL_API = `https://larana.onrender.com`;
 const arrayCart = localStorage.getItem("LISTCART") ? JSON.parse(localStorage.getItem("LISTCART")) : [];
 async function getData(URL) {
     const promist = await fetch(URL);

@@ -1,6 +1,6 @@
 const inputEmail = document.querySelector("input[name='email']");
 const inputPassword = document.querySelector("input[name='password']");
-const URL_API = `http://localhost:3000`;
+const URL_API = `https://larana.onrender.com`;
 const button = document.querySelector(".c-button-5");
 const boxLogin = document.querySelector(".s-login .s_bot");
 const textLogin = document.querySelector(".s-login h3");
@@ -14,7 +14,7 @@ button.addEventListener("click", async function (e) {
     if (data.length > 0) {
         if (inputPassword.value == data[0].password) {
             if (data[0].access == "admin") {
-                window.location.href = "productListAdmin.html";
+                window.location.href = "/admin/productListAdmin.html";
                 sessionStorage.setItem("USER_LOGIN_ADMIN", data[0].name);
             } else {
                 alert("you not access admin");
