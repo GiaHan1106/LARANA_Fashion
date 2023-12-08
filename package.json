@@ -1,0 +1,24 @@
+{
+    "name": "LARANA-Fashion",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "json-server": "^0.17.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GiaHan1106/LARANA_Fashion.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/GiaHan1106/LARANA_Fashion/issues"
+    },
+    "homepage": "https://github.com/GiaHan1106/LARANA_Fashion#readme"
+}
