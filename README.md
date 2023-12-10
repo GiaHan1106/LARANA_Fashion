@@ -3,6 +3,7 @@
 ## LINK WEBSITE
 
 -   https://larana-fashion.vercel.app/
+-   https://larana-fashion.vercel.app/admin
 
 ## LINK API
 
