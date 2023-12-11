@@ -1,10 +1,16 @@
 .s-listPic {
     margin: 2rem 0;
+    @media (max-width: 991px) {
+        margin: 0;
+    }
     .s_pic {
         position: relative;
         object-fit: cover;
         cursor: pointer;
         overflow: hidden;
+        @media (max-width: 991px) {
+            display: none;
+        }
         img {
             transition: 0.5s;
         }

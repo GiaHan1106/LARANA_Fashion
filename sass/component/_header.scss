@@ -2,11 +2,41 @@
     @include flexBox("center", "");
     border-bottom: 1px solid #eee;
     padding: 1.5rem 0;
+    .s_subMenu {
+        @include posAbsolute("tr", 35%, 0);
+        z-index: 999999;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        ul {
+            li {
+                margin-bottom: 0.8rem;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                background-color: $white-color;
+                width: 100%;
+                padding: 0.6rem 2rem;
+                text-align: center;
+            }
+        }
+    }
+    .s_bar {
+        i {
+            cursor: pointer;
+            display: none;
+        }
+    }
     .s_logo {
         margin-right: 2rem;
         a {
             img {
                 width: 120px;
+                @media (max-width: 991px) {
+                    width: 80px;
+                }
             }
         }
     }
@@ -82,6 +112,7 @@
         }
     }
 }
+
 .s-textRun {
     color: $white-color;
     background-color: $secondary-color;
@@ -98,5 +129,21 @@
         margin: 0 0.3rem;
         font-weight: $fw-600;
         font-size: $fs-18;
+    }
+}
+@media (max-width: 991px) {
+    .s-header {
+        .s_bar {
+            i {
+                display: block;
+            }
+            margin-left: 2rem;
+        }
+        .s_menu {
+            display: none;
+        }
+        .s_search {
+            width: 80%;
+        }
     }
 }

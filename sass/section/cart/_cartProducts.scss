@@ -10,7 +10,6 @@
             width: 15%;
             margin-right: 1rem;
             img {
-                height: 150px;
                 object-fit: cover;
             }
         }
@@ -40,6 +39,15 @@
             }
             .s_quality {
                 @include flexBox("center", "");
+                @media (max-width: 575px) {
+                    display: unset;
+                    .s_text {
+                        display: none;
+                    }
+                    .s_number {
+                        margin: 1rem 0 2rem 0;
+                    }
+                }
                 .s_inforPro {
                     margin-left: auto;
                 }

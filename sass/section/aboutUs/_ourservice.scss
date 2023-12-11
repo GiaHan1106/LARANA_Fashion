@@ -27,3 +27,46 @@
         }
     }
 }
+@media (max-width: 425px) {
+    .s-ourService {
+        .s_bot {
+            .s_service {
+                .s_content {
+                    h4 {
+                        font-size: $fs-14;
+                    }
+                    h5 {
+                        font-size: $fs-13;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .s-ourService {
+        .s_bot {
+            margin-top: 2rem;
+            .s_service {
+                .s_content {
+                    h4 {
+                        font-size: $fs-16;
+                    }
+                    h5 {
+                        font-size: $fs-14;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .s-ourService {
+        .s_top {
+            margin: 1.5rem 0;
+            h2 {
+            }
+        }
+    }
+}

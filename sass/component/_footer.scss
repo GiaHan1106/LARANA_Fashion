@@ -3,8 +3,8 @@
     color: $white-color;
     position: relative;
     padding-top: 5em;
-    @media (max-width: 575px) {
-        padding-top: 2em;
+    @media (max-width: 991px) {
+        padding-top: 0.5rem;
     }
     .s_top {
         border-bottom: 0.1px solid #eeeeee83;

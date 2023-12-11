@@ -13,15 +13,21 @@
                 transition: 0.5s;
             }
         }
-        img {
-            height: 400px;
-        }
         h3 {
             @include posAbsolute("tl", 50%, 50%);
             transform: translate(-50%, -50%);
             font-size: $fs-25;
             color: #fff;
             transition: 0.5s;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .s-categories {
+        .s_kindProduct {
+            .s_img {
+                margin-bottom: 1.4rem;
+            }
         }
     }
 }

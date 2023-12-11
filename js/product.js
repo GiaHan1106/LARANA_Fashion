@@ -45,3 +45,7 @@ filterPrice.forEach((li) => {
         li.classList.add("active");
     });
 });
+$(".s-productPage .s_filterProduct .s_filter .s_showFilter").click(function () {
+    $(this).parent().find("ul").slideToggle();
+    $(this).toggleClass("active");
+});

@@ -15,11 +15,30 @@
     .s_filterProduct {
         .s_filter {
             margin-bottom: 2.5rem;
-            h4 {
-                font-size: $fs-16;
-                font-weight: $fw-600;
+            .s_showFilter {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &.active {
+                    i {
+                        transform: rotate(180deg);
+                        color: $gray-color-2;
+                    }
+                }
+                h4 {
+                    font-size: $fs-16;
+                    font-weight: $fw-600;
+                }
+                i {
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
             }
+
             ul {
+                @media (max-width: 991px) {
+                    display: none;
+                }
                 li {
                     margin-top: 1rem;
                     font-size: $fs-14;

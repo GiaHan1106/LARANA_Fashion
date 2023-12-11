@@ -3,163 +3,162 @@
     background-color: #eee;
     background-image: linear-gradient(to top, #fffffff9, #fffffff9), url(../../../img/HomePage/showProduct/background.jpeg);
     padding: 3rem 0;
-    .s_show {
-        display: flex;
-        text-align: center;
-        .s_picPro {
-            position: relative;
-            .s_shirt {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                &#shirt-2 {
-                    .s_card {
-                        top: 200px;
-                        left: 10%;
-                    }
-                    .s_dot {
-                        top: 70%;
-                        right: 24%;
-                    }
-                    &:after {
-                        @include posAbsolute("tr", 72%, 28%);
-                        height: 2px;
-                    }
-                }
-                &.active {
-                    &#shirt-1 {
-                        &::after {
-                            width: 30%;
-                        }
-                    }
-                    &::after {
-                        width: 50%;
-                    }
-                    .s_card {
-                        opacity: 1;
-                        visibility: visible;
-                        transition: 0.5s;
-                        transition-delay: 0.5s;
-                    }
-                }
+
+    .s_picPro {
+        position: relative;
+        .s_shirt {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            &#shirt-2 {
                 .s_card {
-                    @include posAbsolute("tl", 15px, 30%);
-                    width: 15%;
-                    height: 15%;
-                    padding: 0.2rem 0.5rem;
-                    opacity: 0;
-                    visibility: hidden;
-                }
-                &.active {
-                    opacity: 1;
-                    visibility: visible;
-                }
-                img {
-                    border-radius: 0.6rem 0.6rem 0 0;
-                    height: 90px;
-                }
-                .s_detailPro {
-                    padding: 0.2rem 0.5rem;
-                    background-color: $white-color;
-                    border-radius: 0 0 0.6rem 0.6rem;
-                    h4 {
-                        font-size: $fs-13;
-                    }
-                    .s_price {
-                        font-size: $fs-13;
-                        color: $red-color;
-                        font-weight: $fw-600;
-                        span {
-                            text-decoration: line-through;
-                            color: $gray-color;
-                            font-weight: $fw-300;
-                            margin-left: 0.3rem;
-                        }
-                    }
+                    top: 200px;
+                    left: 10%;
                 }
                 .s_dot {
-                    @include posAbsolute("tr", 35%, 20%);
-                    width: 15px;
-                    height: 15px;
-                    background-color: $gray-color-5;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    z-index: 9;
-                    &:before {
-                        content: "";
-                        display: block;
-                        @include posAbsolute("tl", 0, 0);
-                        width: 15px;
-                        height: 15px;
-                        border: 1px solid #fff;
-                        border-radius: 50%;
-                        animation: dot 1s infinite;
-                    }
+                    top: 70%;
+                    right: 24%;
                 }
                 &:after {
-                    content: "";
-                    @include posAbsolute("tr", 37%, 24%);
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                    background-color: $gray-color-5;
-                    width: 0;
+                    @include posAbsolute("tr", 72%, 28%);
                     height: 2px;
-                    transition: 0.5s;
-                    cursor: pointer;
                 }
             }
-        }
-        .s_inforPro {
-            margin-left: 1rem;
-            h2 {
-                span {
-                    background-color: $red-color;
-                    padding: 0.2rem 1rem;
-                    margin-left: 0.8rem;
-                    font-style: italic;
-                    color: $yellow-color;
-                }
-            }
-
-            .s_sale {
-                h3 {
-                    margin: 1rem 0;
-                    font-weight: $fw-700;
-                    color: $secondary-color;
-                    animation: flashSale 1s infinite;
-                    font-style: italic;
-                }
-                h4 {
-                    color: $red-color;
-                    font-size: $fs-22;
-                    font-weight: $fw-600;
-                    span {
-                        font-weight: $fw-300;
-                        margin-left: 1rem;
-                        font-size: $fs-14;
-                        font-style: italic;
-                        color: $gray-color;
-                        text-decoration: line-through;
+            &.active {
+                &#shirt-1 {
+                    &::after {
+                        width: 30%;
                     }
                 }
-                .s_saleTime {
-                    display: flex;
-                    justify-content: center;
-                    margin: 1.5rem 0;
-                    .s_numberSale {
-                        border: 1px solid rgb(130, 130, 130);
-                        padding: 0.5rem 1rem;
-                        border-radius: 0.5rem;
-                        margin-right: 1rem;
-                        text-align: center;
-                        background-color: transparent;
-                        border: 1px solid $black-color;
-                        color: $black-color;
-                        width: 12%;
-                        h5 {
-                            font-size: $fs-22;
-                        }
+                &::after {
+                    width: 50%;
+                }
+                .s_card {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    transition-delay: 0.5s;
+                }
+            }
+            .s_card {
+                @include posAbsolute("tl", 15px, 30%);
+                width: 90px;
+                height: 15%;
+                padding: 0.2rem 0.5rem;
+                opacity: 0;
+                visibility: hidden;
+            }
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+            img {
+                border-radius: 0.6rem 0.6rem 0 0;
+                height: 90px;
+            }
+            .s_detailPro {
+                padding: 0.2rem 0.5rem;
+                background-color: $white-color;
+                border-radius: 0 0 0.6rem 0.6rem;
+                h4 {
+                    font-size: $fs-13;
+                }
+                .s_price {
+                    font-size: $fs-13;
+                    color: $red-color;
+                    font-weight: $fw-600;
+                    span {
+                        text-decoration: line-through;
+                        color: $gray-color;
+                        font-weight: $fw-300;
+                        margin-left: 0.3rem;
+                    }
+                }
+            }
+            .s_dot {
+                @include posAbsolute("tr", 35%, 20%);
+                width: 15px;
+                height: 15px;
+                background-color: $gray-color-5;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 9;
+                &:before {
+                    content: "";
+                    display: block;
+                    @include posAbsolute("tl", 0, 0);
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    animation: dot 1s infinite;
+                }
+            }
+            &:after {
+                content: "";
+                @include posAbsolute("tr", 37%, 24%);
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                background-color: $gray-color-5;
+                width: 0;
+                height: 2px;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+        }
+    }
+    .s_inforPro {
+        text-align: center;
+        margin-left: 1rem;
+        h2 {
+            span {
+                background-color: $red-color;
+                padding: 0.2rem 1rem;
+                margin-left: 0.8rem;
+                font-style: italic;
+                color: $yellow-color;
+            }
+        }
+
+        .s_sale {
+            h3 {
+                margin: 1rem 0;
+                font-weight: $fw-700;
+                color: $secondary-color;
+                animation: flashSale 1s infinite;
+                font-style: italic;
+            }
+            h4 {
+                color: $red-color;
+                font-size: $fs-22;
+                font-weight: $fw-600;
+                span {
+                    font-weight: $fw-300;
+                    margin-left: 1rem;
+                    font-size: $fs-14;
+                    font-style: italic;
+                    color: $gray-color;
+                    text-decoration: line-through;
+                }
+            }
+            .s_saleTime {
+                display: flex;
+                justify-content: center;
+                margin: 1.5rem 0;
+                .s_numberSale {
+                    border: 1px solid rgb(130, 130, 130);
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    margin-right: 1rem;
+                    text-align: center;
+                    background-color: transparent;
+                    border: 1px solid $black-color;
+                    color: $black-color;
+
+                    h5 {
+                        font-size: $fs-22;
                     }
                 }
             }
@@ -187,5 +186,23 @@
     100% {
         color: $third-color;
         background-color: transparent;
+    }
+}
+@media (max-width: 767px) {
+    .s-showProduct {
+        .s_inforPro {
+            margin-top: 1rem;
+            h2 {
+                font-size: $fs-22;
+            }
+            .s_textPro {
+                font-size: $fs-16;
+            }
+            .s_sale {
+                h3 {
+                    font-size: $fs-22;
+                }
+            }
+        }
     }
 }

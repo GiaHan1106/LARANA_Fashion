@@ -4,13 +4,14 @@ $(function () {
         autoplay: true,
     });
 });
+
 //filter categories
 let filterCate = document.querySelector(".s-categories .row");
 async function renderCate() {
     const API_PRODUCT = `${URL_API}/cate`;
     const dataProduct = await getData(API_PRODUCT);
     dataProduct.forEach((element) => {
-        filterCate.innerHTML += `<div class="col-lg-3">
+        filterCate.innerHTML += `<div class="col-6 col-lg-3">
         <a href="product.html?idCate=${element.name}" class="s_kindProduct">
             <div class="s_img">
                 <img src="${element.img}" alt="" />

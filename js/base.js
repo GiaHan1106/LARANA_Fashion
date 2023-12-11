@@ -19,7 +19,7 @@ async function renderProduct(cate, box) {
 function renderHTMLProduct(box, data) {
     box.innerHTML = "";
     data.forEach((pro) => {
-        box.innerHTML += `<div class="col-lg-3">
+        box.innerHTML += `<div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <a href="detailProduct.html?id=${pro.id}" class="s_cardProduct">
                     <div class="s_img">
                         <img src="${pro.img}" alt="" />
@@ -57,10 +57,20 @@ function renderHeader() {
                 <a href="cart.html" class="s_card">
                     <i class="fa-thin fa-cart-shopping"></i>
                     <span>1</span>
-
                     <p>Cart</p>
                 </a>
             </div>
+            <div class="s_bar">
+            <i class="fa-light fa-bars-staggered"></i>
+            </div>
+            <div class="s_subMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
         </div>
     </div>`;
     let input = document.querySelector(".s-header .s_search input");
@@ -140,9 +150,19 @@ function countCart() {
     qualityCart.innerHTML = arrayCart.length;
 }
 countCart();
-//footer
+//footer up
 $(function () {
     $(".s-footer .s_up i").click(function () {
         document.documentElement.scrollTop = 0;
     });
+});
+
+//responsive Menu
+let bar = document.querySelector(".s-header .s_bar");
+let subMenu = document.querySelector(".s-header .s_subMenu");
+bar.addEventListener("click", function (e) {
+    subMenu.classList.toggle("active");
+    if (e.target == e.currentTarget) {
+        subMenu.classList.remove("active");
+    }
 });

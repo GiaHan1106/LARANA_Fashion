@@ -3,6 +3,9 @@
     .s_place {
         border: 1.4px solid $gray-color;
         padding: 2rem;
+        @media (max-width: 991px) {
+            margin: 1rem;
+        }
         h5 {
             color: $gray-color-2;
             font-size: $fs-15;

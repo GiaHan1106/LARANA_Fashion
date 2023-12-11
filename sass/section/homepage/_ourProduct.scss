@@ -4,12 +4,13 @@
             ul {
                 display: flex;
                 justify-content: center;
+                padding: 0 1rem;
                 li {
-                    margin-right: 7rem;
                     font-size: $fs-16;
                     font-weight: $fw-400;
                     padding: 0.4rem 1.5rem;
                     color: $gray-color-2;
+                    margin-right: 6rem;
                     transition: 0.5s;
                     cursor: pointer;
                     &.active {
@@ -23,5 +24,32 @@
     }
     .s_product {
         margin-top: 1.5rem;
+    }
+}
+@media (max-width: 767px) {
+    .s-ourProduct {
+        .s_bot {
+            .s_tab {
+                ul {
+                    justify-content: space-between;
+                    li {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .s-ourProduct {
+        .s_bot {
+            .s_tab {
+                ul {
+                    li {
+                        font-size: $fs-14;
+                    }
+                }
+            }
+        }
     }
 }
