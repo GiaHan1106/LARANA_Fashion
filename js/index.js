@@ -23,6 +23,7 @@ async function renderCate() {
     console.log(dataProduct);
 }
 renderCate();
+
 //ourProduct
 let listTab = document.querySelectorAll(".s-ourProduct .s_bot .s_tab ul li");
 let changeTab = document.querySelector(".s-ourProduct .s_bot .s_tab ul li");
@@ -72,6 +73,7 @@ const countdown = setInterval(function () {
         document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, "0");
     }
 }, 1000);
+
 //feedback
 $(".s-feedBack .s_listFeed ").slick({
     dots: true,

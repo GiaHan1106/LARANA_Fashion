@@ -30,12 +30,13 @@ function showOrder() {
     subTotal[1].innerHTML = sum;
 }
 showOrder();
-const buttonOrder = document.querySelector(".s_checkout .c-button-5");
+
 const inputName = document.querySelector('input[name="fullname"]');
 const inputEmail = document.querySelector('input[name="email"]');
 const inputPhone = document.querySelector('input[name="phone"]');
 const inputAddress = document.querySelector('input[name="address"]');
 const inputNote = document.querySelector('textarea[name="note"]');
+const buttonOrder = document.querySelector(".s_checkout .c-button-5");
 buttonOrder.addEventListener("click", async function (e) {
     e.preventDefault();
     let now = new Date();

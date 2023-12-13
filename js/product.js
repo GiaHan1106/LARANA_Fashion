@@ -18,6 +18,7 @@ async function renderListProduct() {
     }
 }
 renderListProduct();
+
 //filter product
 let filterCate = document.querySelectorAll("#filterCate li");
 filterCate.forEach((li) => {
@@ -45,6 +46,7 @@ filterPrice.forEach((li) => {
         li.classList.add("active");
     });
 });
+//slide toggle filter Cate, price
 $(".s-productPage .s_filterProduct .s_filter .s_showFilter").click(function () {
     $(this).parent().find("ul").slideToggle();
     $(this).toggleClass("active");

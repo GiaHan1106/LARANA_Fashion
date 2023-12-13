@@ -809,7 +809,7 @@ body {
 }
 
 .s-detailPro {
-  margin: 3.5rem 0;
+  margin-top: 2rem;
   position: relative;
 }
 .s-detailPro .s_img {
@@ -838,7 +838,7 @@ body {
   padding: 0.5rem 1rem;
 }
 .s-detailPro .s_inforPro h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 600;
 }
 .s-detailPro .s_inforPro h3 {
@@ -929,7 +929,7 @@ body {
   background-color: #eaeaea;
 }
 .s-detailPro .s_cart {
-  width: 25%;
+  width: 20%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 1rem;
   position: absolute;
@@ -1016,7 +1016,7 @@ body {
 }
 
 .s-policyReturn {
-  margin: 2rem 0;
+  margin: 0 0 2rem 0;
 }
 .s-policyReturn .s_policy h2 {
   font-size: 1.2em;

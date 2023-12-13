@@ -16,6 +16,7 @@ async function renderProduct(cate, box) {
     const dataProduct = await getData(API_PRODUCT);
     renderHTMLProduct(box, dataProduct);
 }
+
 function renderHTMLProduct(box, data) {
     box.innerHTML = "";
     data.forEach((pro) => {
