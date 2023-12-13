@@ -39,7 +39,7 @@ function renderHeader() {
     <div class="container">
         <div class="s-header">
             <div class="s_logo">
-                <a href=""><img src="./img/logo/logoheader.png" alt="" /></a>
+                <a href="index.html"><img src="./img/logo/logoheader.png" alt="" /></a>
             </div>
             <div class="s_menu">
                 <ul>
